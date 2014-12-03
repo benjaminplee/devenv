@@ -113,3 +113,23 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+source ~/.bashrc.colors    # Bring in easy to use color codes
+
+# Go "UP" or "DOWN" a directory, whichever slant I feal that day
+alias u="cd .."
+alias d="cd .."
+
+function watch_bash() { watch -d bash -i -c "'$@'" ; }  # watch cmd using bash to allow aliases and functions
+
+# Set vim as our editor of choice for various commands
+export EDITOR=vim
+
+# Git specific helpers
+function story() { export GIT_STORY="$@" ; }
+function devs() { export GIT_DEVS="$@" ; }
+function ci() { git ci -m "$GIT_STORY $@ $GIT_DEVS" ; }
+function cia() { git ci -a -m "$GIT_STORY $@ $GIT_DEVS" ; }
+alias st="git st"
+alias add="git add"
+
