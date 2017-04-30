@@ -9,7 +9,10 @@ call vundle#begin()          " required
 Plugin 'gmarik/Vundle.vim'   " required
 
 " Bundles below
-Bundle 'altercation/vim-colors-solarized'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'scrooloose/nerdtree'
+Plugin 'kien/ctrlp.vim'
+Plugin 'bufexplorer.zip'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -21,6 +24,9 @@ set number        		" Show line numbers
 syntax enable     		" Use syntax highlighting
 set background=dark		" Use dark oriented colors
 colorscheme solarized 		" Use 256 colors solarized scheme
+map <C-n> :NERDTreeToggle<CR>
+let g:ctrlp_show_hidden = 1
+set shell=/bin/bash
 
 " Setup directories for all those meta-files
 set undodir=~/.vim/.undo//
