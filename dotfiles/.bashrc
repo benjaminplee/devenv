@@ -118,7 +118,7 @@ source ~/.bashrc.colors    # Bring in easy to use color codes
 
 # Go "UP" or "DOWN" a directory, whichever slant I feal that day
 alias u="cd .."
-alias d="cd .."
+alias d=d
 
 function watch_bash() { watch -d bash -i -c "'$@'" ; }  # watch cmd using bash to allow aliases and functions
 
@@ -126,10 +126,13 @@ function watch_bash() { watch -d bash -i -c "'$@'" ; }  # watch cmd using bash t
 export EDITOR=vim
 
 # Git specific helpers
-function story() { export GIT_STORY="$@" ; }
-function devs() { export GIT_DEVS="$@" ; }
-function ci() { git ci -m "$GIT_STORY $@ $GIT_DEVS" ; }
-function cia() { git ci -a -m "$GIT_STORY $@ $GIT_DEVS" ; }
-alias st="git st"
+function story() { export STORY="$1 - " ; }
+function devs() { export DEVS=" - $1" ; }
+function ci() { git commit -m "${STORY}${@}${DEVS}" ; }
+function cia() { git commit -A -m "${STORY}${@}${DEVS}" ; }
+alias st="git status"
 alias add="git add"
+alias adda="git add -A ."
+alias gg="git grep"
+alias push="git push origin HEAD"
 

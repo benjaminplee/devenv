@@ -9,7 +9,9 @@ call vundle#begin()          " required
 Plugin 'gmarik/Vundle.vim'   " required
 
 " Bundles below
-Bundle 'altercation/vim-colors-solarized'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'scrooloose/nerdtree'
+Plugin 'kien/ctrlp.vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
