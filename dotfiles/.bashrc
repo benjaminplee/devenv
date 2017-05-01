@@ -120,7 +120,7 @@ source ~/.bashrc.colors    # Bring in easy to use color codes
 alias u="cd .."
 alias d=d
 
-function watch_bash() { watch -d bash -i -c "'$@'" ; }  # watch cmd using bash to allow aliases and functions
+function watch_bash() { watch -d bash -i -c "'$*'" ; }  # watch cmd using bash to allow aliases and functions
 
 # Set vim as our editor of choice for various commands
 export EDITOR=vim
@@ -128,11 +128,12 @@ export EDITOR=vim
 # Git specific helpers
 function story() { export STORY="$1 - " ; }
 function devs() { export DEVS=" - $1" ; }
-function ci() { git commit -m "${STORY}${@}${DEVS}" ; }
-function cia() { git commit -A -m "${STORY}${@}${DEVS}" ; }
+function ci() { git commit -m "${STORY}${*}${DEVS}" ; }
+function cia() { git commit -A -m "${STORY}${*}${DEVS}" ; }
 alias st="git status"
 alias add="git add"
 alias adda="git add -A ."
 alias gg="git grep"
 alias push="git push origin HEAD"
+alias code="cd /vagrant/code"
 
