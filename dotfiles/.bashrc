@@ -137,3 +137,5 @@ alias gg="git grep"
 alias push="git push origin HEAD"
 alias code="cd /vagrant/code"
 
+alias mc="mix compile"
+alias mt="mix test"
