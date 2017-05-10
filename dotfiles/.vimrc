@@ -27,6 +27,7 @@ colorscheme solarized 		" Use 256 colors solarized scheme
 map <C-n> :NERDTreeToggle<CR>
 let g:ctrlp_show_hidden = 1
 set shell=/bin/bash
+set nowrap
 
 " Setup directories for all those meta-files
 set undodir=~/.vim/.undo//
