@@ -11,3 +11,5 @@ vim -i NONE +PluginInstall +qall > /dev/null 2>&1
 # Increase file handle limits
 sudo su -c 'echo -e "vagrant soft nofile 4096\nvagrant hard nofile 65536\n" > /etc/security/limits.d/vagrant.user.limits.conf'
 
+sudo apt-get install ruby-full -y
+
