@@ -137,3 +137,7 @@ alias gg="git grep"
 alias push="git push origin HEAD"
 alias code="cd /vagrant/code"
 
+
+# DO NOW
+code
+
