@@ -139,3 +139,7 @@ alias code="cd /vagrant/code"
 
 alias mc="mix compile"
 alias mt="mix test"
+
+# DO NOW
+code
+
