@@ -135,6 +135,8 @@ alias add="git add"
 alias adda="git add -A ."
 alias gg="git grep"
 alias push="git push origin HEAD"
+
+alias tmuxux="tmux new-session -A -s main"
 alias code="cd /vagrant/code"
 
 alias mc="mix compile"
