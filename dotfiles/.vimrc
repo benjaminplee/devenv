@@ -9,7 +9,6 @@ call vundle#begin()          " required
 Plugin 'gmarik/Vundle.vim'   " required
 
 " Bundles below
-Plugin 'altercation/vim-colors-solarized'
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'bufexplorer.zip'
@@ -23,7 +22,7 @@ filetype plugin indent on    " required
 set number        		" Show line numbers
 syntax enable     		" Use syntax highlighting
 set background=dark		" Use dark oriented colors
-colorscheme solarized 		" Use 256 colors solarized scheme
+colorscheme darkblue
 map <C-n> :NERDTreeToggle<CR>
 let g:ctrlp_show_hidden = 1
 set shell=/bin/bash

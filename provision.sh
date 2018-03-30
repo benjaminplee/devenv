@@ -2,7 +2,7 @@
 
 cp -r /vagrant/dotfiles/.??* ~/
 
-sudo apt-get install git -y
+sudo apt-get install git curl -y
 
 # Install Vundle (Vim package manager) and activate
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
