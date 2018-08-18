@@ -1,0 +1,3 @@
+send-keys 'mit-scheme' C-m
+split-window -h
+send-keys 'vim playground.lisp' C-m
