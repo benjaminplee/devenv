@@ -12,6 +12,10 @@ Plugin 'gmarik/Vundle.vim'   " required
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'bufexplorer.zip'
+Plugin 'tpope/vim-surround'
+Plugin 'luochen1990/rainbow'
+let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle
+Plugin 'paredit.vim' 
 
 call vundle#end()            " required
 filetype plugin indent on    " required
