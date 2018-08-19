@@ -14,8 +14,9 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'bufexplorer.zip'
 "Plugin 'tpope/vim-surround'
 Plugin 'luochen1990/rainbow'
-Plugin 'paredit.vim' 
-Plugin 'sjl/tslime.vim' 
+Plugin 'paredit.vim'
+Plugin 'sjl/tslime.vim'
+Plugin 'ervandew/supertab'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
