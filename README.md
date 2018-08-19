@@ -8,3 +8,5 @@ development environment setup **SICP**
 3) once in vim, run <leader>t to send paragraph or visual selected contents to scheme repl
 
 ```git update-index --skip-worktree code/playground.scm``` was run to keep playground form being updated each time
+
+help from https://crash.net.nz/posts/2014/08/configuring-vim-for-sicp/
