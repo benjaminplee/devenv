@@ -28,7 +28,7 @@ set number        		" Show line numbers
 syntax enable     		" Use syntax highlighting
 set background=dark		" Use dark oriented colors
 colorscheme darkblue
-map <C-n> :NERDTreeToggle<CR>
+map <leader>n :NERDTreeToggle<CR>
 let g:ctrlp_show_hidden = 1
 set shell=/bin/bash
 set nowrap
