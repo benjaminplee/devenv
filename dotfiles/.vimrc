@@ -12,7 +12,7 @@ Plugin 'gmarik/Vundle.vim'   " required
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'bufexplorer.zip'
-"Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-surround'
 Plugin 'luochen1990/rainbow'
 Plugin 'paredit.vim'
 Plugin 'sjl/tslime.vim'
