@@ -7,7 +7,7 @@
 
 ; expected result with applicative order is infinite loop or error
 ; due to the fact that the operands will be evalated first and
-; p is defined as itself (yay strange loop)
+; p is defined as itself (yay strange loop!)
 ;
 ; with normal-order the primitives would be evaluated and possibly
 ; have the equality check done prior to evaluating p so the loop

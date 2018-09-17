@@ -21,7 +21,7 @@
 (define bad (sqrt1 x))
 (/ (abs (- good bad)) good) 
 
-;;;;; Not quite sure about this one
+;;; Not quite sure about this one
 ;;; Calculating too big squares can overflow?
 ;;; Take too long to get down to that precision?
 
